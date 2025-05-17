@@ -14,13 +14,13 @@
       
       <!-- Menu -->
       <div class="flex-1 overflow-y-auto ">
-        <UNavigationMenu 
-          orientation="vertical" 
-          class="px-2"
-          :items="navLinks" 
-          :collapsed="isCollapsed"           
-          :ui="{
-            linkLeadingIcon: 'text-lg'
+        <UNavigationMenu
+            orientation="vertical"
+            class="px-2"
+            :items="navLinks"
+            :collapsed="isCollapsed"
+            :ui="{
+            linkLeadingIcon: isCollapsed ? 'text-2xl mx-auto' : 'text-lg'
           }"
         />
       </div>
